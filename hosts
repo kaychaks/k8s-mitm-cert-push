@@ -1,0 +1,18 @@
+[all]
+node1           ansible_ssh_host={{vault_hosts.ips.node1}} ansible_user={{vault_hosts.ssh_user}}
+node2           ansible_ssh_host={{vault_hosts.ips.node2}} ansible_user={{vault_hosts.ssh_user}}
+node3           ansible_ssh_host={{vault_hosts.ips.node3}} ansible_user={{vault_hosts.ssh_user}}
+node4           ansible_ssh_host={{vault_hosts.ips.node4}} ansible_user={{vault_hosts.ssh_user}}
+node5           ansible_ssh_host={{vault_hosts.ips.node5}} ansible_user={{vault_hosts.ssh_user}}
+node6           ansible_ssh_host={{vault_hosts.ips.node6}} ansible_user={{vault_hosts.ssh_user}}
+node7           ansible_ssh_host={{vault_hosts.ips.node7}} ansible_user={{vault_hosts.ssh_user}}
+node8           ansible_ssh_host={{vault_hosts.ips.node8}} ansible_user={{vault_hosts.ssh_user}}
+node9           ansible_ssh_host={{vault_hosts.ips.node9}} ansible_user={{vault_hosts.ssh_user}}
+node10           ansible_ssh_host={{vault_hosts.ips.node10}} ansible_user={{vault_hosts.ssh_user}}
+node11           ansible_ssh_host={{vault_hosts.ips.node11}} ansible_user={{vault_hosts.ssh_user}}
+node12           ansible_ssh_host={{vault_hosts.ips.node12}} ansible_user={{vault_hosts.ssh_user}}
+node13           ansible_ssh_host={{vault_hosts.ips.node13}} ansible_user={{vault_hosts.ssh_user}}
+node14          ansible_ssh_host={{vault_hosts.ips.node14}} ansible_user={{vault_hosts.ssh_user}}
+node15           ansible_ssh_host={{vault_hosts.ips.node15}} ansible_user={{vault_hosts.ssh_user}}
+node16           ansible_ssh_host={{vault_hosts.ips.node16}} ansible_user={{vault_hosts.ssh_user}}
+node17           ansible_ssh_host={{vault_hosts.ips.node17}} ansible_user={{vault_hosts.ssh_user}}

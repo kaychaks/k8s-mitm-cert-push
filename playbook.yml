@@ -1,0 +1,28 @@
+---
+- hosts : all
+  vars :
+    local_cert_file : "" ## make sure to update this with a real path before executing the playbook
+    ca_cert_path : ""
+  tasks :
+    - name : push MITM cert to all nodes of cluster
+      become : yes
+      become_method : sudo
+      copy:
+        src: "{{ local_cert_file }}"
+        dest: "{{ ca_cert_path }}"
+      register: ca_cert
+    - name : update ca-certificates
+      become : yes
+      become_method : sudo
+      command: update-ca-certificates
+      when : ca_cert.changed
+      notify : restart docker
+
+  handlers :
+    - name : restart docker
+      become: yes
+      become_method : sudo
+      service :
+        name : docker
+        state : restarted
+...
